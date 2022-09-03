@@ -10,6 +10,9 @@ public class Graph : MonoBehaviour {
 
     Transform[] points;
 
+	[SerializeField, Range(0, 2)]
+	int function = 0;
+
 	void Awake () {
 		float step = 2f / resolution;
 		var position = Vector3.zero;
@@ -31,7 +34,15 @@ public class Graph : MonoBehaviour {
 		for (int i = 0; i < points.Length; i++) {
             Transform point = points[i];
             Vector3 position = point.localPosition;
-            position.y = Mathf.Sin(Mathf.PI * (position.x + time));
+			if (function == 0) {
+				position.y = FunctionLibrary.Wave(position.x, time);
+			}
+            else if (function == 1) {
+                position.y = FunctionLibrary.MultiWave(position.x, time);
+            }
+            else if (function == 2) {
+                position.y = FunctionLibrary.SlidingMultiWave(position.x, time);
+            }
             point.localPosition = position;
         }
 	}
