@@ -513,6 +513,58 @@ MonoBehaviour:
   display: {fileID: 1363713200}
   displayMode: 0
   sampleDuration: 1
+--- !u!1 &1461908165
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1461908167}
+  - component: {fileID: 1461908166}
+  m_Layer: 0
+  m_Name: GPUGraph
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1461908166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461908165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ab99f49e4864169ab57b55edb59b81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 200
+  function: 0
+  functionDuration: 1
+  transitionDuration: 0
+  transitionMode: 0
+  computeShader: {fileID: 7200000, guid: 28fb4775acf4745a2a1f938aeaf8e9e7, type: 3}
+  material: {fileID: 2100000, guid: bb2b42ccad2724cda910290481916ff0, type: 2}
+  mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1461908167
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461908165}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1260.3604, y: -465.90204, z: -20.7362}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1599159228
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,15 +589,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1599159228}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 290ad780188f746cba468ceed3e645bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pointPrefab: {fileID: 5330420051261007971, guid: 5f31e1ae2d81a4b179ed2e02ccdf8bd7, type: 3}
-  resolution: 100
+  resolution: 200
   function: 0
   functionDuration: 5
+  transitionDuration: 1
   transitionMode: 0
 --- !u!4 &1599159230
 Transform:
